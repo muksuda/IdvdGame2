@@ -19,6 +19,8 @@ public class medium extends World
     private int time=0;
     private int time3 =0;
     public  int ground=340;
+    int heart;
+    
     
       String [] mon ={"mon1","mon2","mon3","mon4","mon5"};
     public medium()

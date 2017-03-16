@@ -56,17 +56,16 @@
         {
             if (Greenfoot.isKeyDown("up"))
             {
-               
-                Speed = -27;
+              
+                Speed = -20;
                 setLocation(getX(), getY()+Speed);
-                 
+                  Greenfoot.playSound("jump.wav");
             }
         }
       }
      public void shoot(){
        if(Greenfoot.isKeyDown("space")){
-          
-           setImage("manshoot.png");
+          setImage("manshoot.png");
             getWorld().addObject(new bullet(),getX(),getY());
             Greenfoot.playSound("shoot.wav");
        }
@@ -75,7 +74,9 @@
       public void touchboum(){
           
             if(isTouching(boum.class)){
+                
             setImage("b.png");
+            Greenfoot.playSound("boum.wav");
             time--;
             if(time==0){
             Greenfoot.stop();
@@ -90,8 +91,9 @@
                 heart--;
             if(heart==0){
                 Greenfoot.setWorld(new scoreboard());
+                Greenfoot.stop();
             }
-            //Greenfoot.stop();
+            
         }
         
        

@@ -16,6 +16,7 @@ public class hard extends World
     private int time2=0;
     private int time=0;
     private int time3=0;
+    int heart;
     
       String [] mon ={"mon1","mon2","mon3","mon4","mon5","mon6","mon7","mon8"};
     public hard()

@@ -20,7 +20,7 @@ public class level extends World
          addObject(new level1(),221,89);
          addObject(new level2(),224,196);
          addObject(new level3(),227,306);
-        
+         addObject(new how(),589,126);
        
     }
      
